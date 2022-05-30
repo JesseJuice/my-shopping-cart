@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eCommerce Website</title>
+
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a9132db598.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- product slider -->
+
+  <script src="js/cart.js" async></script>
+
+  </head>
+
+  <body>
+
+<header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-light  p-4">
+  <div class="container ">
+    <a class="navbar-brand text-dark" href="#">eCommerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mx-auto options">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#footer">About</a>
+        </li>
+      </ul>
+
+       <ul class="navbar-nav me-4">
+        <li class="nav-item">
+          <a class="nav-link text-dark" aria-current="page" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Navbar -->
+
+</header>
+
+  <!-- Background image -->
+        <div class="container p-5 bg-header d-flex justify-content-between">
+      <div class="d-flex align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3 ">Get the best product <br> at your home</h1>
+          <!-- <h4 class="mb-3">Subheading</h4>  -->
+          <input type="search" name="search" placeholder="search for the item" class="search">
+        </div>
+      </div>
+      <!-- Social Icon -->
+
+      <div class="social-icon d-flex justify-content-end mt-5">
+        <ul class="socials">
+          <li class="mb-3">
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+          </li>
+          <li class="my-3">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="my-3">
+          <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!-- Background image -->
+
+
+  <!-- bootstrap carousel -->
+
+  <section id="product-section">
+
+    <div class="container">
+
+    <!--
+
+    <div class="row">
+      <div class="col text-center my-4">
+        <h1 class="fs-2">Trending Item</h1>
+        <div class="underline mx-auto mt-3"></div>
+      </div>
+    </div>
+
+    -->
+
+    <div class="row mt-3 mb-4 button-group filter-button-group">
+      <div class="">
+        <button type="button" data-filter="*"  class="btn btn-primary mx-1 text-dark">All</button>
+        <button type="button" data-filter=".electronic"  class="btn btn-primary mx-1 text-dark">Electronic</button>
+        <button type="button" data-filter=".clothing"  class="btn btn-primary mx-1 text-dark">Clothing</button>
+        <button type="button" data-filter=".furniture"  class="btn btn-primary mx-1 text-dark">Furniture</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center g-3" id="product-list">
+
+      <div class="col-xl-4 col-lg-6 col-md-6 electronic">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_1.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Watch</span>
+            <span class="d-block shop-item-price">₱999.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 electronic">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_2.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Webcam</span>
+            <span class="d-block shop-item-price">₱1200.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 clothing">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_3.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Scarf</span>
+            <span class="d-block shop-item-price">₱700.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 clothing">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_4.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Polo Shirt</span>
+            <span class="d-block shop-item-price">₱600.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 electronic">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_5.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Lamp</span>
+            <span class="d-block shop-item-price">₱700.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 furniture">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_6.jpg" class="img-fluid d-block mx-auto shop-item-image">
+          </div>
+        </div>
+        <div class="product-content text-left py-3 d-flex justify-content-between">
+          <div class="product-detail row ">
+            <span class="d-block text-uppercase fw-bold shop-item-title">Chair</span>
+            <span class="d-block shop-item-price">₱1200.99</span>
+          </div>
+          <button class="btn btn-cart shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+<!--
+      <div class="col-lg-4 col-md-6 electronic">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_7.jpg" class="img-fluid d-block mx-auto">
+          </div>
+          <div class="product-content text-center py-3">
+            <span class="d-block text-uppercase fw-bold">product name</span>
+            <span class="d-block">$68.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 clothing">
+        <div class="product-item">
+          <div class="product-img">
+            <img src="img/product_img_8.jpg" class="img-fluid d-block mx-auto">
+          </div>
+          <div class="product-content text-center py-3">
+            <span class="d-block text-uppercase fw-bold">product name</span>
+            <span class="d-block">$68.00</span>
+          </div>
+        </div>
+      </div>
+
+-->
+
+      </div>
+   </div>
+  </section>
+
+  <!-- end of bootstrap carousel -->
+
+  <!--- Cart Section --->
+
+    <section class="content-section p-5" id="cart">
+       <h2 class="section-header text-center mb-5">CART</h2>
+      <div class="cart-row cart-heading">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+          <div class="cart-row">
+              <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="img/product_img_6.jpg" width="100" height="100">
+                  <span class="cart-item-title">Shirt</span>
+              </div>
+              <span class="cart-price cart-column">₱999.99</span>
+              <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="1">
+                  <button class="btn btn-danger" type="button">Remove</button>
+              </div>
+          </div>
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">₱0.00</span>
+      </div>
+      <button class="btn btn-primary btn-purchase " type="button">PURCHASE</button>
+  </section>
+
+  <!---- End of Cart Section ---->
+
+  <!--Latest Section-->
+
+<section class="latest-section">
+     <div class="container latest-content">
+       <div class="row d-flex justify-content-around">
+          <div class="col-lg-6 col-md-6 d-flex justify-content-center align-self-center">
+              <div class="text-white p-4">
+                 <h1 class="mb-3">Latest Style Shoes</h1>
+                 <p>Men 2020 collection shoe</p>
+                 <button class="btn latest-btn btn-danger">See All</button>
+              </div>
+          </div>
+
+      <div class="col-lg-4 col-md-6 d-flex justify-content-center align-self-center">
+        <div class="row d-flex">
+           <div class="latest-img mt-2">
+             <img src="img/nike-red.png" class="shoe-img mb-5 img-fluid align-self-center">
+           </div>
+         </div>
+      </div>
+     </div>
+     </div>
+</section>
+
+  <!--End of Latest Section-->
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark p-5 mt-5 text-muted" id="footer">
+  <!-- Section: Social media -->
+ 
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            Shop
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Location</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">FAQ</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="about">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            Contacts
+          </h6>
+          <p><i class="fas fa-phone me-3 text-white"></i> (63) 945 346 6755</p>
+          <p><i class="fa-solid fa-envelope text-white"></i> souljuice48@yahoo.com</p>
+          <p><i class="fas fa-home me-3 text-white"></i> New York, NY 10012, US</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+</footer>
+<!-- Footer -->
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+  <!-- isotope plug-in -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  
+  <!--Filter js file-->
+  <script src="js/filter.js"></script>
+
+  <script src="index.js"></script>
+  </body>
+</html>
